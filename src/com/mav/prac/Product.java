@@ -25,7 +25,7 @@ public class Product {
         Map<String, List<Customer>> collected = p.list.stream()
                 .collect(Collectors.groupingBy(Customer::gender));
 
-        collected.forEach((gen, size) -> System.out.println(gen+", "+size.size()));
+        collected.forEach((gen, listdata) -> System.out.println(gen+", "+listdata.size()));
     }
 
 
